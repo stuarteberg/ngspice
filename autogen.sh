@@ -21,14 +21,8 @@ ADMS=0
 # Exit variable
 DIE=0
 
-
-# Check for Mac OS X
-uname -a | grep -q "Darwin"
-if [ $? -eq 0 ]; then
-    LIBTOOLIZE=glibtoolize
-else
-    LIBTOOLIZE=libtoolize
-fi
+# libtoolize name
+LIBTOOLIZE=libtoolize
 
 help()
 {
